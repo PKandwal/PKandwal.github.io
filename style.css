@@ -1,0 +1,132 @@
+/* style.css */
+body {
+    font-family: 'Fredoka One', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+nav {
+    background-color: #ffa07a;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #ff4500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px;
+    width: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fff9e6;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: block;
+    color: #333;
+    margin: 5px 0;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sidebar a:hover {
+    color: #ff6347;
+}
+
+main {
+    width: 60%;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+.ingredients, .instructions {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.ingredients ul, .instructions ol {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: #ffa07a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
